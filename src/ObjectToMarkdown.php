@@ -86,7 +86,7 @@ class ObjectToMarkdown
             $return = (
                 $level === 0
                 ? []
-                : []
+                : ['']
             );
 
             foreach ($value as $k => $v) {
@@ -98,7 +98,7 @@ class ObjectToMarkdown
                 );
             }
 
-            return PHP_EOL . implode(PHP_EOL, $return);
+            return implode(PHP_EOL, $return);
         }
 
         return (string) $value;

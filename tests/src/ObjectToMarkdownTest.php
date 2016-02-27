@@ -87,6 +87,10 @@ class ObjectToMarkdownTest extends \PHPUnit_Framework_TestCase
         ];
         $markdown = ObjectToMarkdown::convert($array);
 
+        echo PHP_EOL . '-------' . PHP_EOL;
+        echo $markdown;
+        echo PHP_EOL . '-------' . PHP_EOL;
+
         $this->markTestIncomplete();
     }
 
@@ -101,6 +105,9 @@ class ObjectToMarkdownTest extends \PHPUnit_Framework_TestCase
         ];
 
         $markdown = ObjectToMarkdown::convert($object);
+        echo PHP_EOL . '-------' . PHP_EOL;
+        echo $markdown;
+        echo PHP_EOL . '-------' . PHP_EOL;
 
         $this->markTestIncomplete();
     }
@@ -123,6 +130,9 @@ class ObjectToMarkdownTest extends \PHPUnit_Framework_TestCase
 
         $markdown = ObjectToMarkdown::convert($object);
 
+        echo PHP_EOL . '-------' . PHP_EOL;
+        echo $markdown;
+        echo PHP_EOL . '-------' . PHP_EOL;
         $this->markTestIncomplete();
     }
 }
